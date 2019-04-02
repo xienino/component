@@ -1,0 +1,48 @@
+.eclips() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.qaThreadItem {
+    background: #FFFFFF;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 6px;
+    height: 84px;
+    margin-bottom: 16px;
+    padding: 8px;
+    overflow: hidden;
+    position: relative;
+    .cover {
+        float: left;
+        height: 68px;
+        width: 90px;
+    }
+    .mainInfo {
+        width: e('calc(100% - 98px)');
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        float: right;
+        padding: 10px 0;
+        .title {
+            font-size: 16px;
+            color: #001713;
+            letter-spacing: 0.51px;
+            width: e('calc(100% - 30px)');
+            .eclips();
+        }
+        .detail {
+            span {
+                font-size: 12px;
+                color: #9B9B9B;
+                letter-spacing: 0.38px;
+                padding-right: 10px;
+            }
+        }
+    }
+    .operation {
+        width: 96px;
+    }
+}
