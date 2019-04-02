@@ -1,0 +1,56 @@
+.formatList {
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 4px 0 rgba(157, 177, 195, 0.5);
+    .title {
+        line-height: 22px;
+        background: #FFFFFF;
+        box-shadow: 0 1px 2px 0 rgba(127,162,190,0.50);
+        display: flex;
+        color: #54698D;
+        height: 50px;
+        line-height: 50px;
+        margin-bottom: 4px;
+        li {
+            font-family: PingFangSC-Medium;
+        }
+    }
+    .body {
+        color: #54698D;
+        height:  e('calc(100% - 54px)');
+        overflow: auto;
+        .item {
+            display: flex;
+            height: 40px;
+            line-height: 40px;
+            background: #fff;
+            &:nth-child(odd) {
+                background: #F6F9FE;
+            }
+            span {
+                .icon {
+                    font-size: 20px;
+                }
+            }
+        }
+    }   
+}
+.flex4 {
+    flex: 4;
+}
+.flex5 {
+    flex: 5;
+}
+.flex6 {
+    flex: 6;
+}
+.flex7 {
+    flex: 7;
+}
+.flex9 {
+    flex: 9;
+}
+.flex10 {
+    flex: 10;
+}
